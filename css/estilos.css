@@ -1,0 +1,325 @@
+/* -----> configuracion general de la pagina <------ */
+* {
+
+    /* o utilizaremos para el responsive,
+    seria la suma del ancho y relleno de los sistemas */
+
+    box-sizing: border-box;
+}
+
+html {
+    /* la pgina se mueve de forma lenta al bajar */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+header {
+    background-color: green;
+}
+
+header .logo {
+    margin: 0;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+header .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #31B404;
+}
+
+.contenedor-principal {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#carouselExampleIndicators img {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+}
+
+#somos .cuerpo {
+    text-align: center;
+    padding: 80px 12px;
+    margin-top: -3%;
+}
+
+.texto p {
+    font-size: 20px;
+    line-height: 2;
+    margin-top: -20px;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25;
+}
+
+.img {
+    background-image: url("img/uka\ uka.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 450px;
+    border-radius: 25px;
+}
+
+.sector-foto{
+    margin-top: -2%;
+}
+
+.sector-foto h2{
+    color: #31B404;
+    margin-top: 1%;
+    margin-left: 9%;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: left;
+}
+
+.sector-foto img{
+    width: 370px;
+    height: 350px;
+    margin-top: 10%;
+    margin-left: 15%;
+    border: 2px solid #31B404;
+    border-radius: 10%;
+}
+
+#contenedor-foto{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.ultima-foto{
+    color: #31B404;
+    text-align: center;
+    margin-top: 300%;
+}
+
+.galeria{
+    background-color: white;
+    width: 350px;
+    margin: 10px;
+    border: 2px solid #31B404;
+    box-shadow: 2px 2px 2px 0 #31B404;
+    transition: all 1s;
+    transition: 1.3s ease-in-out;
+}
+
+.galeria :hover{
+    border: 2px solid #31B404;
+    transform: scale(1.4);
+    
+}
+
+.foto{
+    height: 200px;
+    background-size: cover;
+}
+
+.autor{
+    text-transform: uppercase;
+    color: #31B404;
+    padding: 15px;
+    text-align: center;
+}
+
+.foto1{
+    background-image: url("img/crash.jpg");
+}
+
+.foto2{
+    background-image: url("img/aku\ aku.jpg");
+}
+
+.foto3{
+    background-image: url("img/uka\ uka.jpg");
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.aaa{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../img/aaaaaaaaaaa.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    /* llamamos al keyframes */
+    /* ease-in-out --- trans lenta */
+    animation: navarro 20s infinite ease-in-out;
+}
+
+.eee{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+
+@keyframes navarro{
+    0%{
+        background-image: url("../img/no.jpg");
+    }
+    25%{
+        background-image: url("../img/non.jpg");
+    }
+    50%{
+        background-image: url("../img/si.jpg");
+    }
+    75%{
+        background-image: url("../img/sis.jpg");
+    }
+    100%{
+        background-image: url("../img/claro.jpg");
+    }
+}
+
+
+@media(min-width:850px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    header .contenedor-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    #carouselExampleIndicators img {
+        width: 100%;
+        height: 50%;
+        background-size: cover;
+    }
+
+    #somos .cuerpo {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos .texto {
+        width: 56%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #somos h2{
+        margin-top: 0px;
+    }
+    #somos .img{
+        background-image: url("img/uka\ uka.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 380px;
+        width: 600px;
+        border-radius: 25px;
+    }
+}
+
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 15px;
+    grid-gap: 10px;
+}
+
+.galeria-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center center;
+}
+
+.galeria-item {
+    position: relative;
+}
+
+.galeria-texto {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 15px;
+    background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+}
+
+/* Especificar el tamaño del grid especifico */
+
+.galeria-item:nth-child(1){
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+.galeria-item:nth-child(3){
+    grid-column-start: span 1;
+}
